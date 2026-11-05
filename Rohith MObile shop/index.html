@@ -1,0 +1,621 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Rohith Mobile Shop</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <h1>Rohith Mobile Shop</h1>
+        </div>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="active">Home</a>
+
+            <a href="mobiles.html">Mobiles</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="login.html">Login</a>
+
+            <a href="cart.html" class="cart-link">
+                🛒 Cart
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+<section class="hero home-hero">
+
+    <div class="hero-content home-hero-content">
+
+        <p class="hero-small">
+            WELCOME TO ROHITH MOBILE SHOP
+        </p>
+
+        <h2>
+            Find Your
+            <span>Perfect Smartphone</span>
+        </h2>
+
+        <p>
+            Discover the latest smartphones from
+            Apple, Samsung, OnePlus, Vivo and OPPO
+            at the best prices.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="mobiles.html"
+               class="btn primary-btn">
+                Shop Now
+            </a>
+
+            <a href="#brands"
+               class="btn secondary-btn">
+                Explore Brands
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT SIDE MOBILE SHOP IMAGE -->
+
+    <div class="home-hero-image">
+
+        <img src="images/mobile-shop.jpg"
+             alt="Rohith Mobile Shop">
+
+    </div>
+
+</section>
+
+    <!-- ================= BRANDS ================= -->
+
+    <section class="brands" id="brands">
+
+        <div class="section-title">
+
+            <p>POPULAR BRANDS</p>
+
+            <h2>
+                Choose Your Favorite Brand
+            </h2>
+
+        </div>
+
+
+        <div class="brand-container">
+
+            <!-- iPhone -->
+
+            <a href="mobiles.html?brand=iphone"
+               class="brand-card">
+
+                <div class="brand-icon">
+                    🍎
+                </div>
+
+                <h3>iPhone</h3>
+
+                <p>Premium Apple Smartphones</p>
+
+            </a>
+
+
+            <!-- Samsung -->
+
+            <a href="mobiles.html?brand=samsung"
+               class="brand-card">
+
+                <div class="brand-icon">
+                    📱
+                </div>
+
+                <h3>Samsung</h3>
+
+                <p>Powerful Galaxy Smartphones</p>
+
+            </a>
+
+
+            <!-- OnePlus -->
+
+            <a href="mobiles.html?brand=oneplus"
+               class="brand-card">
+
+                <div class="brand-icon">
+                    ⚡
+                </div>
+
+                <h3>OnePlus</h3>
+
+                <p>Fast & Powerful Smartphones</p>
+
+            </a>
+
+
+            <!-- Vivo -->
+
+            <a href="mobiles.html?brand=vivo"
+               class="brand-card">
+
+                <div class="brand-icon">
+                    📸
+                </div>
+
+                <h3>Vivo</h3>
+
+                <p>Camera Focused Smartphones</p>
+
+            </a>
+
+
+            <!-- OPPO -->
+
+            <a href="mobiles.html?brand=oppo"
+               class="brand-card">
+
+                <div class="brand-icon">
+                    ✨
+                </div>
+
+                <h3>OPPO</h3>
+
+                <p>Stylish & Innovative Phones</p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+
+    <section class="featured">
+
+        <div class="section-title">
+
+            <p>FEATURED MOBILES</p>
+
+            <h2>
+                Latest Smartphones
+            </h2>
+
+            <span>
+                Explore our popular smartphones
+            </span>
+
+        </div>
+
+
+        <div class="product-container">
+
+
+            <!-- Product 1 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/iphone/iphone17pro.jpg"
+                         alt="iPhone 17 Pro">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        iPhone 17 Pro
+                    </h3>
+
+                    <p>
+                        256GB Storage
+                    </p>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h4>
+                        ₹1,19,999
+                    </h4>
+
+                    <button onclick="addToCart('iPhone 17 Pro', 119999)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/samsung/samsung-s26.jpg"
+                         alt="Samsung Galaxy S26">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Samsung Galaxy S26
+                    </h3>
+
+                    <p>
+                        256GB Storage
+                    </p>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h4>
+                        ₹79,999
+                    </h4>
+
+                    <button onclick="addToCart('Samsung Galaxy S26', 79999)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/oneplus/oneplus13.jpg"
+                         alt="OnePlus 13">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        OnePlus 13
+                    </h3>
+
+                    <p>
+                        256GB Storage
+                    </p>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h4>
+                        ₹69,999
+                    </h4>
+
+                    <button onclick="addToCart('OnePlus 13', 69999)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/vivo/vivo-x200.jpg"
+                         alt="Vivo X200">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Vivo X200
+                    </h3>
+
+                    <p>
+                        256GB Storage
+                    </p>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h4>
+                        ₹65,999
+                    </h4>
+
+                    <button onclick="addToCart('Vivo X200', 65999)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="view-all">
+
+            <a href="mobiles.html"
+               class="btn primary-btn">
+                View All Mobiles
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="features">
+
+        <div class="section-title">
+
+            <p>WHY ROHITH MOBILE SHOP?</p>
+
+            <h2>
+                We Make Mobile Shopping Easy
+            </h2>
+
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🛡️
+                </div>
+
+                <h3>
+                    Genuine Products
+                </h3>
+
+                <p>
+                    100% genuine and trusted
+                    smartphones.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    💰
+                </div>
+
+                <h3>
+                    Best Prices
+                </h3>
+
+                <p>
+                    Competitive prices and
+                    exciting offers.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🚚
+                </div>
+
+                <h3>
+                    Fast Delivery
+                </h3>
+
+                <p>
+                    Quick and safe delivery
+                    to your doorstep.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🔒
+                </div>
+
+                <h3>
+                    Secure Shopping
+                </h3>
+
+                <p>
+                    Safe and secure shopping
+                    experience.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CALL TO ACTION ================= -->
+
+    <section class="cta">
+
+        <div class="cta-content">
+
+            <h2>
+                Ready to Find Your New Phone?
+            </h2>
+
+            <p>
+                Explore the latest smartphones
+                and choose the one that's perfect
+                for you.
+            </p>
+
+            <a href="mobiles.html"
+               class="btn primary-btn">
+                Shop Smartphones
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-column">
+
+                <h2>
+                    Rohith Mobile Shop
+                </h2>
+
+                <p>
+                    Your trusted destination for
+                    the latest smartphones and
+                    accessories.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="mobiles.html">
+                    Mobiles
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Brands
+                </h3>
+
+                <a href="mobiles.html?brand=iphone">
+                    iPhone
+                </a>
+
+                <a href="mobiles.html?brand=samsung">
+                    Samsung
+                </a>
+
+                <a href="mobiles.html?brand=oneplus">
+                    OnePlus
+                </a>
+
+                <a href="mobiles.html?brand=vivo">
+                    Vivo
+                </a>
+
+                <a href="mobiles.html?brand=oppo">
+                    OPPO
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>📞 +91 98765 43210</p>
+
+                <p>📧 rohithmobiles@gmail.com</p>
+
+                <p>📍 Kurnool, Andhra Pradesh</p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Rohith Mobile Shop.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

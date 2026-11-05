@@ -1,0 +1,424 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Rohith Mobile Shop</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            <h1>Rohith Mobile Shop</h1>
+
+        </div>
+
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="mobiles.html">
+                Mobiles
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="cart.html">
+                🛒 Cart
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= REGISTER SECTION ================= -->
+
+    <section class="register-section">
+
+
+        <div class="register-container">
+
+
+            <!-- Left Information -->
+
+            <div class="register-info">
+
+                <div class="register-logo">
+                    📱
+                </div>
+
+                <h2>
+                    Join Rohith Mobile Shop
+                </h2>
+
+                <p>
+                    Create an account and enjoy a
+                    better smartphone shopping experience.
+                </p>
+
+
+                <div class="register-benefits">
+
+                    <div>
+                        ✓ Easy & Fast Shopping
+                    </div>
+
+                    <div>
+                        ✓ Track Your Orders
+                    </div>
+
+                    <div>
+                        ✓ Save Favorite Mobiles
+                    </div>
+
+                    <div>
+                        ✓ Faster Checkout
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Right Register Form -->
+
+            <div class="register-form">
+
+
+                <h2>
+                    Create Account
+                </h2>
+
+                <p class="register-subtitle">
+                    Fill in your details to register
+                </p>
+
+
+                <form id="registerForm"
+                      onsubmit="registerUser(event)">
+
+
+                    <!-- Full Name -->
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            minlength="3"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="registerEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- Phone -->
+
+                    <div class="form-group">
+
+                        <label for="registerPhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="registerPhone"
+                            name="phone"
+                            placeholder="Enter 10-digit phone number"
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            name="password"
+                            placeholder="Create a password"
+                            minlength="6"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- Confirm Password -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            minlength="6"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- Terms -->
+
+                    <div class="terms">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                required>
+
+                            I agree to the
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- Register Button -->
+
+                    <button
+                        type="submit"
+                        class="register-btn">
+
+                        Create Account
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- Login Link -->
+
+                <div class="login-link">
+
+                    <p>
+
+                        Already have an account?
+
+                        <a href="login.html">
+                            Login
+                        </a>
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <h2>
+                    Rohith Mobile Shop
+                </h2>
+
+                <p>
+                    Your trusted destination for
+                    the latest smartphones and accessories.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="mobiles.html">
+                    Mobiles
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Brands -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Brands
+                </h3>
+
+                <a href="mobiles.html?brand=iphone">
+                    iPhone
+                </a>
+
+                <a href="mobiles.html?brand=samsung">
+                    Samsung
+                </a>
+
+                <a href="mobiles.html?brand=oneplus">
+                    OnePlus
+                </a>
+
+                <a href="mobiles.html?brand=vivo">
+                    Vivo
+                </a>
+
+                <a href="mobiles.html?brand=oppo">
+                    OPPO
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📞 +91 98765 43210
+                </p>
+
+                <p>
+                    📧 rohithmobiles@gmail.com
+                </p>
+
+                <p>
+                    📍 Andhra Pradesh, India
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Rohith Mobile Shop.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
+```

@@ -1,0 +1,29 @@
+1. Explain about Chomsky Hierarchy notation
+2. Demonstrate your understanding of the Pumping Lemma for regular sets with the help of an example.
+3. Describe the working of a Pushdown Automaton (PDA) and Construct a PDA that accepts the language L = {0ⁿ1ⁿ | n ≥ 0} ?
+4. Apply the GNF conversion procedure to transform the grammar S→CA∣BB,  B→b∣SB,  C→b,  A→a into Greibach Normal Form.
+5. Design a finite automation that recognizes the language described by the regular expression 
+   [ ab + (b + aa)b* a ] and [ a (a* ba* ba*)* ]?
+6. Convert the Given CFG into PDA S->aSb, S->bSb, S->c and derive the string abbcbba using Transition Table and draw the Transition Diagram
+7. Define the concept of automata and describe the characteristics of DFA and NFA with suitable example?
+8. What is ambiguity? Explain in detail about ambiguous grammar and unambiguous grammar with example?
+9. Describe the working of a Pushdown Automaton (PDA) and Construct a PDA that accepts the language L = {WCW^R | W=(a,b)*} ?
+10. Apply the GNF conversion procedure to transform the grammar S→AA|0, A-> SS|1 into Greibach Normal Form.
+11. Design a finite automaton that recognizes the language described by the regular expression 
+    [ pq + (q + pp)q* p ] and [ p (p* qp* qp*)* ]?
+12. Convert the Given CFG into PDA S->AB, A->0S/0, B->1S/1 and derive the string 0011 using Transition Table and draw the Transition Diagram
+13. Illustrate the representation of different grammars
+14. Demonstrate your understanding of the Pumping Lemma for regular sets and check whether {a^n b^n |n>=0} is not regular?
+15. Describe the working of a Pushdown Automaton (PDA) and Construct a PDA that accepts the language L = {WW^R | W=(a,b)*}.
+16. Apply the GNF conversion procedure to transform the grammar A1->A2A3,A2->A3A1|b,  3->A1A2|a into Greibach Normal Form.
+17. Design a finite automaton that recognizes the language described by the regular expression 
+    [ 10 + (0 + 11)0* 1 ] and [ 1 (1* 01* 01*) ] ?
+18. Classify Derivation? Explain about Left Most Derivation And Right Most Derivation With Example.
+19. Compare DFA and NFA, highlight their distinctions and connections with corresponding grammars.
+20. What is ambiguity? Explain in detail about ambiguous grammar and unambiguous grammar for E->E+E, E->E-E, E-> a|b|c to check whether the string a+b*c ?
+21. Describe the working of a Pushdown Automaton (PDA) and Construct a PDA that accepts the language L = {a^n b^n | n>=1}?
+22. Apply the GNF conversion procedure to transform the grammar S->AB, A->BS|b, B->SA|a into Greibach Normal Form.
+23. Design a finite automaton that recognizes the language described by the regular expression
+ [ ij + (j + ii)j* i ] and [ i (i* ji* ji*) ]?
+24. a.E=E+E, E=E-E, E=a/b derive the LMD and RMD for the input String a-b+a 
+    b.S->A1B, A->0A/ε, B->0B/1B/ε derive the LMD and RMD for the input String 00101
